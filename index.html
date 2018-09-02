@@ -25,7 +25,7 @@
         <div class="content">
             <h1>What is this about?</h1>
             <p>This is my personal webpage constructed and designed 
-                with <b>html</b>,<b>CSS</b>and<b>jQery</b>. It is not
+                with <b>html</b>, <b>CSS</b> and<b>jQery</b>. It is not
                 finished and it may never be because I am constantly learning 
                 new languages and constantly building projects like these on the 
                 left side and I will constantly add more content, more functionality
@@ -43,7 +43,7 @@
         </div>
         <div class="projects">
             <h3>Some of my work</h3>
-            <img src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
+            <img id="modal-img" src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
             <img src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
             <img src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
         </div>
@@ -69,28 +69,31 @@
                 </div>
     
         </div>
-        <div id="myModal" class="modal">
-            
-            <div class="modal-content">
-                    
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse venenatis elementum dolor, ut euismod felis
-                         porttitor sit amet.<a onclick="arata()">....</a><p id="show"> Nunc ut varius lectus. In velit ante,
-                          egestas ut euismod et, varius quis purus. Nulla sapien 
-                          justo, accumsan at posuere nec, posuere ac metus. Donec 
-                          quis diam ut libero porta placerat. Suspendisse potenti.
-                           In dolor turpis, rutrum vitae viverra a, lobortis nec 
-                           lectus. Nunc vehicula justo non ipsum bibendum, vel
-                            elementum augue molestie. Pellentesque cursus massa 
-                            sit amet sem suscipit, ut mollis enim rutrum. 
-                            Pellentesque urna eros, blandit ut neque vel, tincidunt
-                             dictum nunc. In hac habitasse platea dictumst.
-                              Cras diam ligula, venenatis eget vehicula sit amet,
-                               tempor et sapien. Vestibulum vel odio nunc. </p>
-                              
-                         </div>
-                         
+    </div>
+    <div id="myModal1" class="modal">
+        <div id="modalcontent" class="modal-content">
+                <div class="modal-header">
+                        <span id="close" class="close">&times;</span>
+                    <p>Write me a message</p>
+                </div>
+             <div class="modal-body">   
+    
+            <form>
+                Yor name<br>
+                <input type="text" name="yourname"><br>
+                Your E-mail<br>
+                <input type="email" name="youremail"><br>
+                Message for me<br>
+                <input type="text" name="message"><br>
+                <input type="submit" value="Submit"><br>
+            </div>
+            <div class="modal-footer">
+                    2018 &copy;Bogdan Hiriscau
+                </div>
+    
         </div>
+    </div>
+       
 
 
     <script src="Js/script.js"></script>
