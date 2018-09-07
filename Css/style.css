@@ -49,11 +49,11 @@ body {
     display: none;
 }
 @media screen and (max-width: 600px) {
-    .top-nav a:not(:first-child) {display: none;}
+    .top-nav a {display: none;}
     .top-nav a.icon {
       float: right;
       display: block;
-      top: 0;
+      top: 0px;
     }
   }
   @media screen and (max-width: 600px) {
@@ -105,7 +105,7 @@ body {
 .content2 {
     grid-area: content2;
     box-shadow: var(--shadow);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 18px;
     width: 95%;
     text-align: center;
@@ -120,7 +120,7 @@ body {
     /* padding-left: 0; */
     /* margin-left: 0; */
     box-shadow: var(--shadow);
-    width: 95%;
+    width: 100%;
     text-align: center;
 }
 .projects img {
@@ -150,10 +150,11 @@ body {
 }
 .footer {
     grid-area: footer;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-shadow: var(--shadow);
     font-size: 24px;
-    width: 97%;
+    width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -202,7 +203,7 @@ body {
     width: 50%;
 background: #fff;
 position: relative;
-margin: 10% auto;
+margin: 8% auto;
 box-shadow: 0px 2px 5px #222;
 -moz-box-shadow: 0px 2px 5px #222;
 -webkit-box-shadow: 0px 2px 5px #222;
@@ -219,6 +220,7 @@ animation: in 1s;
   @media screen and (max-width: 600px) {
       .modal-content {
           width: 80%;
+          margin: 1% auto;
       }
   }
 .close {
