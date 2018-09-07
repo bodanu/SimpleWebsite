@@ -278,13 +278,18 @@ input[type=submit] {
     margin: 5px;
     padding: 10px;
     color: white;
-    width: 15%;
+    width: 100px;
     font-weight: bold;
     font-size: 18px;
 }
 input[type=submit]:hover {
     box-shadow: var(--shadow);
     cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    input[type=submit] {
+        width: 70px;
+    }
 }
 #mess {
     height: 50px;
