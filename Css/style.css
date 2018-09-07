@@ -65,6 +65,7 @@ body {
       float: none;
       display: block;
       text-align: left;
+      top: 0;
     }
   }
 .wrapper {
