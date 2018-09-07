@@ -53,6 +53,7 @@ body {
     .top-nav a.icon {
       float: right;
       display: block;
+      top: 0;
     }
   }
   @media screen and (max-width: 600px) {
