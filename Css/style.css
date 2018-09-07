@@ -112,7 +112,7 @@ body {
 .fa {
     padding: 10px;
     font-size: 40px;
-    width: 60px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
 }
@@ -220,4 +220,44 @@ animation: in 1s;
 @keyframes fade-out {
     0% {opacity: 1;}
     100%{opacity: 0;}
+}
+input[type=text] {
+    border: 2px solid coral;
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+}
+input[type=email] {
+    border: 2px solid coral;
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+}
+input[type=submit] {
+    background: coral;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    width: 15%;
+    font-weight: bold;
+    font-size: 18px;
+}
+input[type=submit]:hover {
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+#mess {
+    height: 50px;
+}
+input[type=submit]:focus {
+    box-shadow: none;
+}
+#para1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+#myModal p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
 }

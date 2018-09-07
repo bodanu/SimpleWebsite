@@ -14,18 +14,18 @@
 //         modal.style.display = 'none';
 //       }
 //   }
-var modal1 = document.getElementById('myModal');
+var modal3 = document.getElementById('work');
 
 var btn = document.getElementById('two');
       
 var span = document.getElementsByClassName('close')[0];
       
 $(btn).click(function() {
-  $(modal1).fadeIn(500);
+  $(modal3).fadeIn(500);
 });
       
-$(span).click(function() {
-  $(modal1).fadeOut(500);
+$("#closework").click(function() {
+  $("#work").fadeOut(500);
 });
 
 // window.onclick =   function(event) {
@@ -34,7 +34,7 @@ $(span).click(function() {
 //        }
 //    }
  
-
+var modal1 = document.getElementById('myModal');
 var btn = document.getElementById('three');
       
 var span = document.getElementsByClassName('close')[0];
@@ -74,5 +74,8 @@ window.onclick =   function(event) {
        }
         if (event.target == modal2) {
           $(modal2).fadeOut(500)
+        }
+        if (event.target == modal3) {
+          $(modal3).fadeOut(500)
         }
    }
