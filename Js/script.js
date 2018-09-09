@@ -67,6 +67,34 @@ $("#close").click(function() {
   $("#myModal1").fadeOut(1000);
 });
 
+var myModalpage = document.getElementById('myModalpage');
+
+$("#myTrigger").on("click",function(e) {
+  e.preventDefault();
+  $('#myModalpage').fadeIn(500);
+  $("#myModa")
+  .css('height', '80%')
+  .css('width', '80%')
+  .css('margin', 'auto')
+  .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io/responsive/" ></object>')
+ 
+
+});
+
+var myModalpage2 = document.getElementById('myModalpage2')
+
+$("#myTrigger2").on("click",function(e) {
+  e.preventDefault();
+  $('#myModalpage2').fadeIn(500);
+  $("#myModa2")
+  .css('height', '80%')
+  .css('width', '80%')
+  .css('margin', 'auto')
+  .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io" ></object>')
+ 
+
+});
+
 window.onclick =   function(event) {
   
          if (event.target == modal1) {
@@ -77,6 +105,12 @@ window.onclick =   function(event) {
         }
         if (event.target == modal3) {
           $(modal3).fadeOut(500)
+        }
+        if (event.target == myModalpage) {
+          $(myModalpage).fadeOut(500)
+        }
+        if (event.target == myModalpage2) {
+          $(myModalpage2).fadeOut(500)
         }
    }
 
@@ -89,3 +123,5 @@ function myFunction() {
       x.className = "top-nav";
   }
 }
+
+

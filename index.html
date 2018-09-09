@@ -37,7 +37,9 @@
 
         </div>
         <div class="content2">
-            <img src="http://econweb.ucsd.edu/~wew045/images/Your-Name-Here.jpg">
+            <div id="imgcontainer">
+            <img id="picofme" src="Css/park-panorama.jpg">
+            </div>
             <p>You will see me in this picture soon enough!</p>
             <p id="p1">You can always check all about me by looking at my resumee. I will definetly not 
                 write all my bio here so you will not get bored :) </p>
@@ -46,10 +48,12 @@
                     leave a feedback. Positive or negative, it is still constructive.
                 </p>
         </div>
+        
         <div class="projects">
-            <h3>Some of my work</h3>
-            <img id="modal-img" src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
-            <img src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
+                
+            <h3 id="projects-title">Some of my work</h3>
+            <a id="myTrigger"><img id="modal-img" src="responsive.png"></a>
+            <a id="myTrigger2"><img src="themechange.png"></a>
             <img src="http://sonderhausgsd.com/wp-content/uploads/2012/02/UnderConstruction.jpg">
         </div>
         <div class="footer">
@@ -58,7 +62,14 @@
             <a href="https://twitter.com/HiriscauBogdan" class="fa fa-twitter"></a>
         </div>
     </div>
-    
+    <div id="myModalpage" class="modal">
+            <div id="myModa" class="full reveal" data-reveal></div>
+
+    </div>
+    <div id="myModalpage2" class="modal">
+            <div id="myModa2" class="full reveal" data-reveal></div>
+
+    </div>
     <div id="myModal" class="modal">
         <div id="modalcontent" class="modal-content">
                 <div class="modal-header">
