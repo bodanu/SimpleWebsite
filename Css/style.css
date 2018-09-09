@@ -3,6 +3,10 @@
     --shadow: 0 2px 8px 0px #575555;
 
 }
+.modalopen {
+    overflow-y: scroll;
+    position: fixed;
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
 }

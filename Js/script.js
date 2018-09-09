@@ -22,10 +22,12 @@ var span = document.getElementsByClassName('close')[0];
       
 $(btn).click(function() {
   $(modal3).fadeIn(500);
+  $("body").addClass("modalopen");
 });
       
 $("#closework").click(function() {
   $("#work").fadeOut(500);
+  $("body").removeClass("modalopen")
 });
 
 // window.onclick =   function(event) {
@@ -41,10 +43,12 @@ var span = document.getElementsByClassName('close')[0];
       
 $(btn).click(function() {
   $(modal1).fadeIn(500);
+  $("body").addClass("modalopen");
 });
       
 $(span).click(function() {
   $(modal1).fadeOut(500);
+  $("body").removeClass("modalopen")
 });
 
 // window.onclick =   function(event) {
@@ -61,10 +65,12 @@ var span = document.getElementsByClassName('close')[0];
       
 $(btn).click(function() {
   $("#myModal1").css("display", "block");
+  $("body").addClass("modalopen");
 });
  
 $("#close").click(function() {
   $("#myModal1").fadeOut(1000);
+  $("body").removeClass("modalopen")
 });
 
 var myModalpage = document.getElementById('myModalpage');
@@ -72,6 +78,7 @@ var myModalpage = document.getElementById('myModalpage');
 $("#myTrigger").on("click",function(e) {
   e.preventDefault();
   $('#myModalpage').fadeIn(500);
+  $("body").addClass("modalopen");
   $("#myModa")
   .css('height', '80%')
   .css('width', '80%')
@@ -86,6 +93,7 @@ var myModalpage2 = document.getElementById('myModalpage2')
 $("#myTrigger2").on("click",function(e) {
   e.preventDefault();
   $('#myModalpage2').fadeIn(500);
+  $("body").addClass("modalopen");
   $("#myModa2")
   .css('height', '80%')
   .css('width', '80%')
@@ -95,22 +103,29 @@ $("#myTrigger2").on("click",function(e) {
 
 });
 
+
+
 window.onclick =   function(event) {
   
          if (event.target == modal1) {
          $(modal1).fadeOut(1000);
+         $("body").removeClass("modalopen")
        }
         if (event.target == modal2) {
           $(modal2).fadeOut(500)
+          $("body").removeClass("modalopen")
         }
         if (event.target == modal3) {
           $(modal3).fadeOut(500)
+          $("body").removeClass("modalopen")
         }
         if (event.target == myModalpage) {
           $(myModalpage).fadeOut(500)
+          $("body").removeClass("modalopen")
         }
         if (event.target == myModalpage2) {
           $(myModalpage2).fadeOut(500)
+          $("body").removeClass("modalopen")
         }
    }
 
