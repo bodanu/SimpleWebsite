@@ -46,7 +46,7 @@ $(btn).click(function() {
   $("body").addClass("modalopen");
 });
       
-$(span).click(function() {
+$('#closecv').click(function() {
   $(modal1).fadeOut(500);
   $("body").removeClass("modalopen")
 });
@@ -80,12 +80,17 @@ $("#myTrigger").on("click",function(e) {
   $('#myModalpage').fadeIn(500);
   $("body").addClass("modalopen");
   $("#myModa")
-  .css('height', '67%')
-  .css('width', '80%')
+  .css('height', '73%')
+  .css('width', '100%')
   .css('margin', 'auto')
   .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io/responsive/" ></object>')
  
 
+});
+
+$('#closeresponsive').on("click", function() {
+  $('#myModalpage').fadeOut(500);
+  $("body").removeClass("modalopen");
 });
 
 var myModalpage2 = document.getElementById('myModalpage2')
@@ -95,8 +100,8 @@ $("#myTrigger2").on("click",function(e) {
   $('#myModalpage2').fadeIn(500);
   $("body").addClass("modalopen");
   $("#myModa2")
-  .css('height', '63%')
-  .css('width', '80%')
+  .css('height', '73%')
+  .css('width', '100%')
   .css('margin-bottom', '30px')
   .css('margin', 'auto')
   .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io" ></object>')
@@ -104,7 +109,10 @@ $("#myTrigger2").on("click",function(e) {
 
 });
 
-
+$('#closetheme').on("click", function() {
+  $('#myModalpage2').fadeOut(500);
+  $("body").removeClass("modalopen");
+});
 
 window.onclick =   function(event) {
   

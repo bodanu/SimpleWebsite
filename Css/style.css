@@ -20,6 +20,14 @@ body {
     height: 100%;
     top: 0;
 }
+.container-for-content {
+    height: 83%;
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin-top: -35px;
+    
+}
 .top-nav {
     width: 100%;
     position: fixed;
@@ -248,7 +256,13 @@ animation: in 1s;
   @media screen and (max-width: 600px) {
       .modal-content {
           width: 80%;
+          height: 60%;
+          overflow-y: scroll;
+          overflow-x: hidden;
           margin: 1% auto;
+          margin-top: -35px;
+          font-weight: normal;
+          font-size: 10px;
       }
   }
 .close {
@@ -261,7 +275,8 @@ animation: in 1s;
     background-color: #222;
     background-size: contain;
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+    margin-right: 0;
 }
 .modal-header {
     background: rgb(36, 5, 5);
@@ -270,14 +285,15 @@ animation: in 1s;
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding: 2px;
+    padding-bottom: 2px;
     
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 #header-page1, #header-page2 {
-    width: 80%;
+    width: auto;
+    padding-bottom: 12px;
 }
 #header-page1 p, #header-page2 p, #footer-page1 p, #footer-page2 p {
     padding: 0;
@@ -286,9 +302,10 @@ animation: in 1s;
 
 
 #footer-page1, #footer-page2 {
-    width: 80%;
+    width: 100%;
     padding: 0;
 }
+
 ::-webkit-scrollbar {
     width: 0;
 }
