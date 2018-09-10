@@ -81,7 +81,6 @@ $("#myTrigger").on("click",function(e) {
   $("body").addClass("modalopen");
   $("#myModa")
   .css('height', '67%')
-  .css('overflow', 'hidden')
   .css('width', '80%')
   .css('margin', 'auto')
   .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io/responsive/" ></object>')
@@ -96,8 +95,7 @@ $("#myTrigger2").on("click",function(e) {
   $('#myModalpage2').fadeIn(500);
   $("body").addClass("modalopen");
   $("#myModa2")
-  .css('height', '80%')
-  .css('overflow', 'hidden')
+  .css('height', '65%')
   .css('width', '80%')
   .css('margin', 'auto')
   .html('<object width="100%" height="100%" type="text/html" data="https://bodanu.github.io" ></object>')
