@@ -106,7 +106,7 @@ body {
     text-align: center;
     width: 95%;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
     box-shadow: var(--shadow);
 }
 .content p {
@@ -119,7 +119,7 @@ body {
     font-size: 18px;
     width: 95%;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .content2 p {
     padding: 10px;
@@ -276,6 +276,18 @@ animation: in 1s;
     margin-left: auto;
     margin-right: auto;
 }
+#header-page1 {
+    width: 80%;
+}
+
+
+#footer-page1 {
+    width: 80%;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
 .modal-body{
     text-align: center;
 }
@@ -342,7 +354,7 @@ input[type=submit]:focus {
 }
 #para1 {
     font-size: 16px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 #myModal p{
     font-size: 16px;
